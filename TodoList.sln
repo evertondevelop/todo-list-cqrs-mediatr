@@ -5,19 +5,15 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{61B8E181-CD0F-44DF-915B-F425BED83207}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{0C1AC2E4-3CD1-4828-A0F2-B00DFABE5AFD}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C31937FD-2F38-4F00-84A3-5AAB3C6ECFEB}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLogic", "{C31937FD-2F38-4F00-84A3-5AAB3C6ECFEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{07657775-0780-4ED4-97B8-5A699A346B4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Infra", "src\TodoList.Infra\TodoList.Infra.csproj", "{6DB822FA-ACD2-43D0-99A8-46838D307552}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Infra", "src\TodoList.Infra\TodoList.Infra.csproj", "{6DB822FA-ACD2-43D0-99A8-46838D307552}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Domain", "src\TodoList.Domain\TodoList.Domain.csproj", "{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.BusinessLogic", "src\TodoList.BusinessLogic\TodoList.BusinessLogic.csproj", "{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Application", "src\TodoList.Application\TodoList.Application.csproj", "{C97BC6A3-DA9F-44F9-90E8-849E0588454D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.API", "src\TodoList.API\TodoList.API.csproj", "{CDF55F20-6242-4610-9002-274B0A89904A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.API", "src\TodoList.API\TodoList.API.csproj", "{CDF55F20-6242-4610-9002-274B0A89904A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +29,6 @@ Global
 		{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C97BC6A3-DA9F-44F9-90E8-849E0588454D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C97BC6A3-DA9F-44F9-90E8-849E0588454D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C97BC6A3-DA9F-44F9-90E8-849E0588454D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C97BC6A3-DA9F-44F9-90E8-849E0588454D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CDF55F20-6242-4610-9002-274B0A89904A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CDF55F20-6242-4610-9002-274B0A89904A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF55F20-6242-4610-9002-274B0A89904A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,7 +40,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6DB822FA-ACD2-43D0-99A8-46838D307552} = {07657775-0780-4ED4-97B8-5A699A346B4A}
 		{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B} = {C31937FD-2F38-4F00-84A3-5AAB3C6ECFEB}
-		{C97BC6A3-DA9F-44F9-90E8-849E0588454D} = {0C1AC2E4-3CD1-4828-A0F2-B00DFABE5AFD}
 		{CDF55F20-6242-4610-9002-274B0A89904A} = {61B8E181-CD0F-44DF-915B-F425BED83207}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
