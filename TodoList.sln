@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{07657775-0780-4ED4-97B8-5A699A346B4A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Infra", "src\TodoList.Infra\TodoList.Infra.csproj", "{6DB822FA-ACD2-43D0-99A8-46838D307552}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Data", "src\TodoList.Infra\TodoList.Data.csproj", "{6DB822FA-ACD2-43D0-99A8-46838D307552}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.BusinessLogic", "src\TodoList.BusinessLogic\TodoList.BusinessLogic.csproj", "{C57A5A5A-7449-49DF-8C96-208D4E1EDB1B}"
 EndProject

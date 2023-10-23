@@ -1,4 +1,6 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using TodoList.BusinessLogic.Queries.GetAllTasks;
 
 namespace TodoList.API.Controllers
 {
@@ -6,14 +8,18 @@ namespace TodoList.API.Controllers
     [Route("api/[controller]")]
     public class TasksController : ControllerBase
     {
-        public TasksController()
+        private ISender _mediator;
+
+        public TasksController(ISender mediator)
         {
+            _mediator = mediator;
         }
 
         [HttpGet()]
-        public IActionResult GetTodoList()
+        public async Task<IActionResult> GetTodoList([FromQuery] GetAllTasksQuery request)
         {
-            return Ok();
+            var response = await _mediator.Send(request);
+            return Ok(response);
         }
     }
 }
