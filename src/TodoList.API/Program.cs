@@ -1,4 +1,5 @@
 using TodoList.BusinessLogic;
+using TodoList.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddBusinessDependecies();
+builder.Services.AddInfraDependecies(builder.Configuration["ConnectionString"]!);
 
 var app = builder.Build();
 
@@ -18,6 +20,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.Services.RunMigrations();
 
 app.UseHttpsRedirection();
 
